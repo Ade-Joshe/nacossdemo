@@ -1,17 +1,18 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
-	Nacoss by CSCGRoup 2
+    Nacoss by CSCGRoup 2
 	Released for free under the MIT FREE LICENSE WARE
 -->
-<html>
+
+<html lang="en">
 
 <head>
-    <title>The Official Website of NACOSS </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Edit Profile</title>
 </head>
 
 <body class="is-preload">
@@ -43,25 +44,35 @@
     <div class="inner contenting">
         <center>
             <main style="text-align: left; overflow: -moz-hidden-unscrollable">
-                <div class="rightHalf">
+                <center>
                     <div class="author">
                         <div class="image">
                             <img src="images/pic02.jpg" alt="" />
                         </div>
                     </div>
-                </div>
-                <p class="credit"><strong>Name:</strong> Standley Charisma </p>
-                <p class="credit"><strong>Department: </strong> Information Technology</p>
-                <p class="credit"><strong>Phone Number:</strong> +234 812 129 1234 </p>
-                <p class="credit"><strong>Contact Address:</strong> 24, Corel draw street opposite photoshop junction.
-                </p>
-                <p class="credit"><strong>Designation: </strong> Students </p>
-                <div class="col-12 buttonDiv">
-                    <ul class="actions">
-                        <li><a href='editProfile.html'><input type="submit" value="Edit" class="default" /></a>
-                        </li>
-                    </ul>
-                </div>
+                    <input type="file" placeholder="Edit Profile" accept="image/*" />
+                </center>
+                <form>
+                    <p class="credit"><strong>Name:</strong>
+                        <input type="text" placeholder="Name" value="Standley Charisma" required readonly />
+                    </p>
+                    <p class="credit"><strong>Department: </strong>
+                        <input type="text" placeholder="Department" value="Computer Science" required />
+                    </p>
+                    <p class="credit"><strong>Phone Number:</strong>
+                        <input type="text" placeholder="Phone number" value="+234 801 354 2323" required />
+                    </p>
+                    <p class="credit"><strong>Contact Address:</strong><input type="text" placeholder="Contact Address"
+                            value="24, Corel draw street opposite photoshop junction."></p>
+                    <p class="credit"><strong>Designation: </strong><input type="text" placeholder="Designation"
+                            value="Students" required /></p>
+                    <div class="col-12 buttonDiv">
+                        <ul class="actions">
+                            <li><a href='editProfile.html'><input type="submit" value="Edit" class="default" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
             </main>
         </center>
     </div>
