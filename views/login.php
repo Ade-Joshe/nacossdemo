@@ -1,3 +1,5 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/controller/login.php'; ?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -14,7 +16,7 @@
 
     <!-- Header -->
     <header id="header">
-        <a class="logo" href="index.html"><img class='imageHeader' src="images/nat-logo.png"></a>
+        <a class="logo" href="index.php"><img class='imageHeader' src="images/nat-logo.png"></a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -23,9 +25,9 @@
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="registration.html">Registration</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="registration.php">Registration</a></li>
             <li><a href="#">Login</a></li>
         </ul>
     </nav>
@@ -43,6 +45,8 @@
             <div class="content">
                 <h3 style="text-align: center"><strong> Member Login </strong></h3>
                 <form method="post" action="#">
+                    <input type="hidden" name="<?= Config::get('token_name') ?>" value="<?= Token::generate() ?>">
+                    
                     <div class="row gtr-uniform">
                         <div class="col-12">
                             <input type="email" name="email" id="email" value="" placeholder="Email" required />
@@ -52,13 +56,13 @@
                         </div>
                         <div class="col-12 buttonDiv">
                             <ul class="actions">
-                                <li><a href='profile.html'><input type="submit" value="Login" class="primary" /></a>
+                                <li><a href='profile.php'><input type="submit" value="Login" class="primary" /></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </form>
-                <p style="text-align: center"> Don't have an account, <a href="registration.html"> Register </a></p>
+                <p style="text-align: center"> Don't have an account, <a href="registration.php"> Register </a></p>
             </div>
         </div>
     </section>
@@ -78,7 +82,7 @@
                 </section>
             </div>
             <div class="copyright">
-                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.html">About </a>
+                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.php">About </a>
             </div>
         </div>
     </footer>

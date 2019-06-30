@@ -1,3 +1,5 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/controller/editProfile.php'; ?>
+
 <!DOCTYPE html>
 <!--
     Nacoss by CSCGRoup 2
@@ -19,7 +21,7 @@
 
     <!-- Header -->
     <header id="header">
-        <a class="logo" href="index.html"><img class='imageHeader' src="images/nat-logo.png"></a>
+        <a class="logo" href="index.php"><img class='imageHeader' src="images/nat-logo.png"></a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -29,9 +31,9 @@
     <nav id="menu">
         <ul class="links">
             <li><a href="#">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="registration.php">Registration</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
 
@@ -68,7 +70,7 @@
                             value="Students" required /></p>
                     <div class="col-12 buttonDiv">
                         <ul class="actions">
-                            <li><a href='editProfile.html'><input type="submit" value="Edit" class="default" /></a>
+                            <li><a href='editProfile.php'><input type="submit" value="Edit" class="default" /></a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +93,7 @@
                 </section>
             </div>
             <div class="copyright">
-                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.html">About </a>
+                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.php">About </a>
             </div>
         </div>
     </footer>

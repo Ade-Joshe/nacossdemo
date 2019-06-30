@@ -1,3 +1,5 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/controller/about.php'; ?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -14,7 +16,7 @@
 
     <!-- Header -->
     <header id="header">
-        <a class="logo" href="index.html"><img class='imageHeader' src="images/nat-logo.png"></a>
+        <a class="logo" href="index.php"><img class='imageHeader' src="images/nat-logo.png"></a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -23,10 +25,10 @@
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.php">Registration</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
     </header>
@@ -137,7 +139,7 @@
                 </section>
             </div>
             <div class="copyright">
-                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.html">About </a>
+                <span> &copy; Nacoss, 2019 </span><a style="margin-left: 20px" href="about.php">About </a>
             </div>
         </div>
     </footer>
